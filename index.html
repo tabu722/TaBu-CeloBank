@@ -89,6 +89,17 @@
             href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
             rel="stylesheet"
         />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+
+        <!-- Animation -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <link rel="stylesheet" href="css/animate.css" />
 
         <!-- Styles CSS -->
         <link rel="stylesheet" href="./assets/styles.css" />
@@ -100,7 +111,7 @@
                 <div class="header__inner">
                     <div class="header__left">
                         <!-- Logo -->
-                        <a href="#!">
+                        <a href="#">
                             <div class="logo">
                                 <img
                                     src="./assets/img/Logo.png"
@@ -116,7 +127,7 @@
                             <ul class="header__list">
                                 <li class="header-item">
                                     <a
-                                        href="#!"
+                                        href="#"
                                         class="header-item__value header-item__value--active"
                                     >
                                         Home
@@ -162,7 +173,9 @@
                                     Digital Smart Wallet
                                 </p>
                                 <h1 class="hero-top__heading">
-                                    Digital <span>Payment</span> For Everyone.
+                                    Digital
+                                    <span>Payment</span>
+                                    For Everyone.
                                 </h1>
                                 <p class="hero-top__desc">
                                     We bring together eveything that’s required
@@ -178,6 +191,8 @@
                                         id="hero-top__email"
                                         class="hero-top__email"
                                         placeholder="Your email address"
+                                        required
+                                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                                     />
                                     <button
                                         type="submit"
@@ -199,7 +214,9 @@
                                 <!-- Hero Phone -->
                                 <div class="hero-media__phone">
                                     <!-- Hero Card -->
-                                    <div class="hero-card">
+                                    <div
+                                        class="hero-card animate__animated animate__zoomIn wow"
+                                    >
                                         <div class="hero-card__top">
                                             <p class="hero-card__name">
                                                 Main Balance
@@ -282,7 +299,9 @@
 
                                         <div class="hero-info__list">
                                             <!-- Hero Item 1 -->
-                                            <article class="hero-item">
+                                            <article
+                                                class="hero-item animate__animated animate__lightSpeedInLeft wow"
+                                            >
                                                 <img
                                                     src="./assets/icon/receive-svg.png"
                                                     alt=""
@@ -320,7 +339,9 @@
                                             </article>
 
                                             <!-- Hero Item 2 -->
-                                            <article class="hero-item">
+                                            <article
+                                                class="hero-item animate__animated animate__lightSpeedInLeft animate__delay-2s wow"
+                                            >
                                                 <img
                                                     src="./assets/icon/send-svg.png"
                                                     alt=""
@@ -358,7 +379,9 @@
                                             </article>
 
                                             <!-- Hero Item 3 -->
-                                            <article class="hero-item">
+                                            <article
+                                                class="hero-item animate__animated animate__lightSpeedInLeft animate__delay-3s wow"
+                                            >
                                                 <img
                                                     src="./assets/icon/receive-2-svg.png"
                                                     alt=""
@@ -396,7 +419,9 @@
                                             </article>
 
                                             <!-- Hero Item 4 -->
-                                            <article class="hero-item">
+                                            <article
+                                                class="hero-item animate__animated animate__lightSpeedInLeft animate__delay-4s wow"
+                                            >
                                                 <img
                                                     src="./assets/icon/pay-svg.png"
                                                     alt=""
@@ -435,7 +460,9 @@
                                         </div>
                                     </div>
 
-                                    <div class="hero-media__deposite">
+                                    <div
+                                        class="hero-media__deposite animate__animated animate__backInLeft"
+                                    >
                                         <a href="#!">
                                             <img
                                                 src="./assets/icon/media-dowload.svg"
@@ -447,7 +474,9 @@
                                         <span>$32000</span>
                                     </div>
 
-                                    <div class="hero-media__security">
+                                    <div
+                                        class="hero-media__security animate__animated animate__backInUp"
+                                    >
                                         <a href="#!">
                                             <img
                                                 src="./assets/icon/media-money.svg"
@@ -461,7 +490,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="hero-media__interest">
+                                <div
+                                    class="hero-media__interest animate__animated animate__backInUp"
+                                >
                                     <span>0%</span>
                                     <span>Interest</span>
                                 </div>
@@ -543,7 +574,9 @@
                         <!-- Content SubBody -->
                         <section class="hero-subbody__content">
                             <p class="hero-top__title">Digital Smart Wallet</p>
-                            <h2 class="hero-pay__heading">
+                            <h2
+                                class="hero-pay__heading wow animate__animated animate__zoomInDown"
+                            >
                                 One Card For All Your Payments
                             </h2>
                             <p class="hero-pay__desc">
@@ -570,7 +603,7 @@
                         </section>
 
                         <!-- Media SubBody-->
-                        <div class="hero-subbody__media">
+                        <div class="hero-subbody__media" data-aos="fade-left">
                             <div class="hero-subbody__card">
                                 <div class="hero-subbody__wrap">
                                     <p class="hero-card__name">Main Balance</p>
@@ -851,7 +884,9 @@
                     <!-- Blog List -->
                     <div class="blog__list">
                         <!-- Items 1 -->
-                        <article class="blog-item">
+                        <article
+                            class="blog-item animate__animated animate__flipInX animate__delay-0.5s wow"
+                        >
                             <img
                                 src="./assets/img/blog-1.png"
                                 alt=""
@@ -872,7 +907,9 @@
                         </article>
 
                         <!-- Items 2 -->
-                        <article class="blog-item">
+                        <article
+                            class="blog-item animate__animated animate__flipInX animate__delay-1.5s wow"
+                        >
                             <img
                                 src="./assets/img/blog-2.png"
                                 alt=""
@@ -893,7 +930,9 @@
                         </article>
 
                         <!-- Items 3 -->
-                        <article class="blog-item">
+                        <article
+                            class="blog-item animate__animated animate__flipInX animate__delay-2.5s wow"
+                        >
                             <img
                                 src="./assets/img/blog-3.png"
                                 alt=""
@@ -914,7 +953,9 @@
                         </article>
 
                         <!-- Items 4 -->
-                        <article class="blog-item">
+                        <article
+                            class="blog-item animate__animated animate__flipInX animate__delay-3.5s wow"
+                        >
                             <img
                                 src="./assets/img/blog-4.png"
                                 alt=""
@@ -972,12 +1013,12 @@
                             <img
                                 src="./assets/icon/Star 20.svg"
                                 alt=""
-                                class="app-icon__img"
+                                class="app-icon__img-1"
                             />
                             <img
                                 src="./assets/icon/Star 20.svg"
                                 alt=""
-                                class="app-icon__img"
+                                class="app-icon__img-2"
                             />
                         </div>
 
@@ -986,12 +1027,12 @@
                             <img
                                 src="./assets/icon/Star 20.svg"
                                 alt=""
-                                class="app-icon__img"
+                                class="app-icon__img-3"
                             />
                             <img
                                 src="./assets/icon/Star 20.svg"
                                 alt=""
-                                class="app-icon__img"
+                                class="app-icon__img-4"
                             />
                         </div>
                     </div>
@@ -1093,6 +1134,8 @@
                                         class="footer__input"
                                         id="footer__input"
                                         placeholder="Email address..."
+                                        required
+                                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                                     />
                                     <button
                                         type="submit"
@@ -1117,5 +1160,16 @@
                 <p class="copyright">© 2020 Ligft Media All rights reserved.</p>
             </div>
         </footer>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+            integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            new WOW().init();
+            AOS.init();
+        </script>
     </body>
 </html>
